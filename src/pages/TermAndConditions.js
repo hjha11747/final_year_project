@@ -1,24 +1,22 @@
-import React from 'react'
+import React from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
+import Container from "../components/Container";
 
 const TermAndConditions = () => {
-    return (
-        <>  <Meta title={"Term And Conditions"} />
-            <BreadCrumb title="Term And Conditions" />
-            <section className="policy-wrapper home-wrapper-2 py-5">
-                <div className="container-xxl">
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="policy">
+  return (
+    <>
+      <Meta title={"Term And Conditions"} />
+      <BreadCrumb title="Term And Conditions" />
+      <Container class1="policy-wrapper home-wrapper-2 py-5">
+        <div className="row">
+          <div className="col-12">
+            <div className="policy"></div>
+          </div>
+        </div>
+      </Container>
+    </>
+  );
+};
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
-}
-
-export default TermAndConditions
+export default TermAndConditions;
