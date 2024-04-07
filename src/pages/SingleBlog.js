@@ -4,6 +4,7 @@ import Meta from "../components/Meta";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 import Container from "../components/Container";
+import blog from '../images/blog-1.jpg'
 
 const SingleBlog = () => {
   return (
@@ -20,7 +21,7 @@ const SingleBlog = () => {
               </Link>
               <h3 className="title">A Beautiful Sunday Morning Renaissance</h3>
               <img
-                src="images/blog-1.jpg"
+                src={blog}
                 className="img-fluid w-100 my-4"
                 alt="blog"
               />
