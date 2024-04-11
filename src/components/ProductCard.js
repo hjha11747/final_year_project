@@ -1,6 +1,13 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
 import { Link, useLocation } from "react-router-dom";
+import watch from '../images/watch.jpg'
+import watch2 from '../images/watch2.jpg'
+import addcart from '../images/add-cart.svg'
+import view from '../images/view.svg'
+import wish from '../images/wish.svg'
+import prodcompare from '../images/prodcompare.svg'
+
 
 const ProductCard = (props) => {
   const { grid } = props;
@@ -8,23 +15,22 @@ const ProductCard = (props) => {
 
   return (
     <>
-      <div
-          className={` ${location.pathname == "/product" ? `gr-${grid}` : "col-3"}`}
-      >
-        <Link to=":id" className="product-card position-relative">
+      <div className={` ${location.pathname == "/product" ? `gr-${grid}` : "col-3"}`}>
+        <Link to={`${location.pathname == '/' ?  '/product/:id' : 
+        location.pathname == '/product/:id' ? '/product/:id' : ':id'  }`}  className="product-card position-relative" >
           <div className="wishlist-icon position-absolute">
             <button className="border-0 bg-transparent">
-              <img src="images/wish.svg" alt="wishlist" />
+              <img src={wish} alt="wishlist" />
             </button>
           </div>
           <div className="product-image">
             <img
-              src="images/watch.jpg"
+              src={watch}
               className="img-fluid"
               alt="product image"
             />
             <img
-              src="images/watch.jpg"
+              src={watch2}
               className="img-fluid"
               alt="product image"
             />
@@ -41,8 +47,8 @@ const ProductCard = (props) => {
               edit={false}
               activeColor="#ffd700"
             />
-            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>               
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
               quisquam aspernatur quas molestias vitae, nam officiis iusto
               corporis sint. Voluptatibus magnam quia ducimus consequuntur.
             </p>
@@ -51,35 +57,34 @@ const ProductCard = (props) => {
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
               <button className="border-0 bg-transparent">
-                <img src="images/prodcompare.svg" alt="compare" />
+                <img src={prodcompare} alt="compare" />
               </button>
               <button className="border-0 bg-transparent">
-                <img src="images/view.svg" alt="view" />
+                <img src={view} alt="view" />
               </button>
               <button className="border-0 bg-transparent">
-                <img src="images/add-cart.svg" alt="add" />
+                <img src={addcart} alt="add" />
               </button>
             </div>
           </div>
         </Link>
       </div>
-      <div
-          className={` ${location.pathname == "/product" ? `gr - ${grid}` : "col-3"}`}
-      >
-        <Link className="product-card position-relative">
+      <div className={` ${location.pathname == "/product" ? `gr-${grid}` : "col-3"}`}>
+      <Link to={`${location.pathname == '/' ?  '/product/:id' : 
+      location.pathname == '/product/:id' ? '/product/:id' : ':id'  }`}  className="product-card position-relative" >
           <div className="wishlist-icon position-absolute">
             <Link>
-              <img src="images/wish.svg" alt="wishlist" />
+              <img src={wish} alt="wishlist" />
             </Link>
           </div>
           <div className="product-image">
             <img
-              src="images/watch.jpg"
+              src={watch}
               className="img-fluid"
               alt="product image"
             />
             <img
-              src="images/watch.jpg"
+              src={watch2}
               className="img-fluid"
               alt="product image"
             />
@@ -96,7 +101,7 @@ const ProductCard = (props) => {
               edit={false}
               activeColor="#ffd700"
             />
-              <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
+            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}> 
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
               quisquam aspernatur quas molestias vitae, nam officiis iusto
               corporis sint. Voluptatibus magnam quia ducimus consequuntur.
@@ -106,13 +111,13 @@ const ProductCard = (props) => {
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
               <button className="border-0 bg-transparent">
-                <img src="images/prodcompare.svg" alt="compare" />
+                <img src={prodcompare} alt="compare" />
               </button>
               <button className="border-0 bg-transparent">
-                <img src="images/view.svg" alt="view" />
+                <img src={view} alt="view" />
               </button>
               <button className="border-0 bg-transparent">
-                <img src="images/add-cart.svg" alt="add" />
+                <img src={addcart} alt="add" />
               </button>
             </div>
           </div>

@@ -3,7 +3,7 @@ import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
 import ReactStars from "react-rating-stars-component";
-import ReactImageZoom from "react-image-zoom";
+import ReactImageZoom from 'react-image-zoom';
 import Color from "../components/Color";
 import { TbGitCompare } from "react-icons/tb";
 import { AiOutlineHeart } from "react-icons/ai";
@@ -12,8 +12,8 @@ import Container from "../components/Container";
 const SingleProduct = () => {
   const props = {
     width: 400,
-    height: 600,
-    zoomWidth: 600,
+    height: 500,
+    zoomWidth: 500,
     img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=600",
   };
 
@@ -36,7 +36,7 @@ const SingleProduct = () => {
           <div className="col-6">
             <div className="main-product-image">
               <div>
-                <ReactImageZoom {...props} />
+                <ReactImageZoom {...props } />
               </div>
             </div>
             <div className="other-product-images d-flex flex-wrap gap-15">
