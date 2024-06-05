@@ -114,10 +114,10 @@ const Home = () => {
             <div className="categories d-flex flex-wrap justify-content-center align-items-center">
               <div className="d-flex align-items-center ">
                 <div>
-                  <h6>Music and Gamin</h6>
+                  <h6>Music and Gaming</h6>
                   <p>10 Items</p>
                 </div>
-                <img src="images/camera.jpg" alt="" />
+                <img src="images/music1.jpg" height="100px" width="100px" alt="" />
               </div>
               <div className="d-flex align-items-center ">
                 <div>
@@ -142,31 +142,31 @@ const Home = () => {
               </div>
               <div className="d-flex align-items-center ">
                 <div>
-                  <h6>Music and Gamin</h6>
+                  <h6>Music and Gaming</h6>
                   <p>10 Items</p>
                 </div>
-                <img src="images/camera.jpg" alt="" />
+                <img src="images/music2.jpg" height="100px" width="100px" alt="" />
               </div>
               <div className="d-flex align-items-center ">
                 <div>
                   <h6>Camrea</h6>
                   <p>10 Items</p>
                 </div>
-                <img src="images/camera.jpg" alt="" />
+                <img src="images/camera1.jpg" height="100px" width="150px" alt="" />
               </div>
               <div className="d-flex align-items-center ">
                 <div>
                   <h6>Smart Tv</h6>
                   <p>10 Items</p>
                 </div>
-                <img src="images/tv.jpg" alt="" />
+                <img src="images/tv1.jpg" height="100px" width="120px" alt="" />
               </div>
               <div className="d-flex align-items-center ">
                 <div>
                   <h6>Smart Watches</h6>
                   <p>10 Items</p>
                 </div>
-                <img src="images/headphone.jpg" alt="" />
+                <img src="images/hd1.jpg" height="100px" width="120px"  alt="" />
               </div>
             </div>
           </div>
@@ -177,9 +177,6 @@ const Home = () => {
           <div className="col-12">
             <h3 className="section-heading">Featured Collections</h3>
           </div>
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
           <ProductCard />
         </div>
       </Container>
