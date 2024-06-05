@@ -201,16 +201,16 @@ const Home = () => {
           <div className="col-3">
             <div className="famous-card position-relative">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKR8lZhHgZxWXA2ucQ1c2qwJTl70IrqSHH0g&s"
-                width="300px"
+                src="https://img.freepik.com/premium-photo/headphones-isolated-black-background_335640-1992.jpg?w=360"
+                width="320px"
                 height="350px"
                 className="img-fluid"
                 alt="watch"
               />
               <div className="famous-content position-absolute">
-                <h5 className="text-dark">Big Screen</h5>
-                <h6 className="text-dark">Smart Watch Series 7</h6>
-                <p className="text-dark">From $399 0r $16.62/mo for 24 mo.</p>
+                <h5>Big Screen</h5>
+                <h6>HeadPhone Series</h6>
+                <p>From $399 0r $16.62/mo for 24 mo.</p>
               </div>
             </div>
           </div>
@@ -218,31 +218,30 @@ const Home = () => {
             <div className="famous-card position-relative">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKR8lZhHgZxWXA2ucQ1c2qwJTl70IrqSHH0g&s"
-                width="300px"
-                height="350px"
+                width={320}
+                height={200}
                 className="img-fluid"
                 alt="watch"
               />
               <div className="famous-content position-absolute">
-                <h5 className="text-dark">Big Screen</h5>
-                <h6 className="text-dark">Smart Watch Series 7</h6>
-                <p className="text-dark">From $399 0r $16.62/mo for 24 mo.</p>
+                <h5>Big Screen</h5>
+                <h6>HeadPhone Series </h6>
+                <p>From $399 0r $16.62/mo for 24 mo.</p>
               </div>
             </div>
           </div>
           <div className="col-3">
             <div className="famous-card position-relative">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKR8lZhHgZxWXA2ucQ1c2qwJTl70IrqSHH0g&s"
-                width="300px"
+                src="https://img.freepik.com/premium-photo/headphones-isolated-black-background_335640-1992.jpg?w=360"
                 height="350px"
                 className="img-fluid"
                 alt="watch"
               />
               <div className="famous-content position-absolute">
-                <h5 className="text-dark">Big Screen</h5>
-                <h6 className="text-dark">Smart Watch Series 7</h6>
-                <p className="text-dark">From $399 0r $16.62/mo for 24 mo.</p>
+                <h5>Big Screen</h5>
+                <h6>Smart Watch Series 7</h6>
+                <p>From $399 0r $16.62/mo for 24 mo.</p>
               </div>
             </div>
           </div>
