@@ -7,7 +7,7 @@ import addcart from '../images/add-cart.svg'
 import view from '../images/view.svg'
 import wish from '../images/wish.svg'
 import prodcompare from '../images/prodcompare.svg'
-import camera from '../images/camera.jpg'
+import camera_featued from '../images/camera_featured.jpg'
 
 
 const ProductCard = (props) => {
@@ -81,7 +81,7 @@ const ProductCard = (props) => {
           </div>
           <div className="product-image">
             <img
-              src={camera}
+              src={watch}
               className="img-fluid"
               alt="product image"
             />
